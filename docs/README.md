@@ -10,8 +10,8 @@
 
 ### Websites
 - Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
-### Code
 
+### Code
 - Fork, read, and understand [GGSNN code](https://github.com/yujiali/ggnn)
 - Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
 
