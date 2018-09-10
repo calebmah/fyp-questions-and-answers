@@ -29,5 +29,6 @@ The first method has been applied to question and answer generation, whereas the
 
 ### Progress
 
+- Created [github repository](https://github.com/calebmah/fyp-questions-and-answers)
 - Created this blog
 - Completed project plan
