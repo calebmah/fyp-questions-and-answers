@@ -3,17 +3,34 @@
 ## Todo List
 
 ### Papers
-- Read [Gated Graph Sequence Neural Networks](https://arxiv.org/pdf/1511.05493.pdf) by Yujia Li, Daniel Tarlow, Marc Brockschmidt, Richard Zemel
-- Read [Residual Gated Graph ConvNets](https://arxiv.org/pdf/1711.07553.pdf) by Xavier Bresson, Thomas Laurent
-- Read [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf) by Will Norcliffe-Brown, Efstathios Vafeias, Sarah Parisot to check relevance
-- Read [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](https://arxiv.org/pdf/1502.05698.pdf) by Jason Weston, Antoine Bordes, Sumit Chopra, Alexander M. Rush, Bart van Merriënboer, Armand Joulin, Tomas Mikolov to check relevance.
+- [x] Read [Gated Graph Sequence Neural Networks](https://arxiv.org/pdf/1511.05493.pdf) by Yujia Li, Daniel Tarlow, Marc Brockschmidt, Richard Zemel
+- [x] Read accompanying [presentation slides](https://katefvision.github.io/LanguageGrounding/Slides/27.pdf)
+- [ ] Read [Residual Gated Graph ConvNets](https://arxiv.org/pdf/1711.07553.pdf) by Xavier Bresson, Thomas Laurent
+- [ ] Read [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf) by Will Norcliffe-Brown, Efstathios Vafeias, Sarah Parisot to check relevance
+- [ ] Read [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](https://arxiv.org/pdf/1502.05698.pdf) by Jason Weston, Antoine Bordes, Sumit Chopra, Alexander M. Rush, Bart van Merriënboer, Armand Joulin, Tomas Mikolov to check relevance.
+- [ ] Read [A new model for learning in graph domains](https://ieeexplore.ieee.org/document/1555942/)
 
 ### Websites
-- Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
+- [ ] Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
 
 ### Code
-- Fork, read, and understand [GGSNN code](https://github.com/yujiali/ggnn)
-- Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+- [ ] Read, and understand [GGSNN code](https://github.com/yujiali/ggnn)
+- [ ] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+
+## 24 Sep 2018
+
+### Progress
+- [x] Read [Gated Graph Sequence Neural Networks](https://arxiv.org/pdf/1511.05493.pdf) by Yujia Li, Daniel Tarlow, Marc Brockschmidt, Richard Zemel
+- [x] Read accompanying [presentation slides](https://katefvision.github.io/LanguageGrounding/Slides/27.pdf)
+- [x] Forked [GGSNN code](https://github.com/yujiali/ggnn)
+
+#### Added to Todo List
+- [ ] Read [A new model for learning in graph domains](https://ieeexplore.ieee.org/document/1555942/)
+
+### Questions
+- What exactly is the difference between node annotations (X) and node representations (H)?
+- Is the previous node representation hv (t-1) used in the propagation model or just the neighbors?
+- How to best run code? (Torch not supported on windows, currently using VM, consider online)
 
 ## 10 Sep 2018
 
