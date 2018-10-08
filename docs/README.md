@@ -5,7 +5,7 @@
 ### Papers
 - [x] Read [Gated Graph Sequence Neural Networks](https://arxiv.org/pdf/1511.05493.pdf) by Yujia Li, Daniel Tarlow, Marc Brockschmidt, Richard Zemel
 - [x] Read accompanying [presentation slides](https://katefvision.github.io/LanguageGrounding/Slides/27.pdf)
-- [ ] Read [Residual Gated Graph ConvNets](https://arxiv.org/pdf/1711.07553.pdf) by Xavier Bresson, Thomas Laurent
+- [x] Read [Residual Gated Graph ConvNets](https://arxiv.org/pdf/1711.07553.pdf) by Xavier Bresson, Thomas Laurent
 - [ ] Read [Learning Conditioned Graph Structures for Interpretable Visual Question Answering](https://arxiv.org/pdf/1806.07243.pdf) by Will Norcliffe-Brown, Efstathios Vafeias, Sarah Parisot to check relevance
 - [ ] Read [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](https://arxiv.org/pdf/1502.05698.pdf) by Jason Weston, Antoine Bordes, Sumit Chopra, Alexander M. Rush, Bart van Merriënboer, Armand Joulin, Tomas Mikolov to check relevance.
 - [ ] Read [A new model for learning in graph domains](https://ieeexplore.ieee.org/document/1555942/)
@@ -14,15 +14,27 @@
 - [ ] Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
 
 ### Code
-- [ ] Read, and understand [GGSNN code](https://github.com/yujiali/ggnn)
+- [ ] Read, and understand [GGNN code](https://github.com/yujiali/ggnn)
+- [ ] Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
 - [ ] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+
+## 8 Oct 2018
+
+### Progress
+- [x] Read [Residual Gated Graph ConvNets](https://arxiv.org/pdf/1711.07553.pdf) by Xavier Bresson, Thomas Laurent
+- [x] Forked [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
+- [x] Replicated experiments from [GGNN paper](https://arxiv.org/pdf/1511.05493.pdf) for bAbi tasks 4, 15 and 16. Need to edit code to replicate results for tasks 18 and 19.
+
+### Questions
+- Clarify difference between layers l and timesteps t.
+- Not very clear what it means to apply a ConvNet to graphs. Only look at feature vector of neighboring nodes and itself?
 
 ## 24 Sep 2018
 
 ### Progress
 - [x] Read [Gated Graph Sequence Neural Networks](https://arxiv.org/pdf/1511.05493.pdf) by Yujia Li, Daniel Tarlow, Marc Brockschmidt, Richard Zemel
 - [x] Read accompanying [presentation slides](https://katefvision.github.io/LanguageGrounding/Slides/27.pdf)
-- [x] Forked [GGSNN code](https://github.com/yujiali/ggnn)
+- [x] Forked [GGNN code](https://github.com/yujiali/ggnn)
 
 #### Added to Todo List
 - [ ] Read [A new model for learning in graph domains](https://ieeexplore.ieee.org/document/1555942/)
