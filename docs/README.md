@@ -15,8 +15,18 @@
 
 ### Code
 - [ ] Read, and understand [GGNN code](https://github.com/yujiali/ggnn)
-- [ ] Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
+- [x] Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
 - [ ] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+
+## 22 Oct 2018
+
+### Progress
+- [x] Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch), especially preprocessing code.
+- Attempted to conduct experiments for other 20 bAbi tasks, but facing some issues getting the dataset.
+
+### Issues
+- Current code uses the symbolic form of the bAbi dataset, which is generated with torch (lua), which is not supported on windows.
+- Looking at other ways of obtaining the dataset online or through a VM.
 
 ## 8 Oct 2018
 
