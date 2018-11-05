@@ -32,10 +32,10 @@
 | 9 | 16%|
 | 11 | 32%|
 | 12 | 28%|
-| 13 | 33%|
+| 13 | 29%|
 | 15* | 100%|
 | 16* | 100%|
-| 17 | 44%|
+| 17 | 9%|
 | 18* | 29%|
 
 - Note: All training done with learning rate = 0.01, epochs = 10, propagation steps = 5.
