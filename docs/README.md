@@ -18,6 +18,34 @@
 - [x] Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
 - [ ] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
 
+## 5 Nov 2018
+
+### Progress
+- Generated symbolic bAbi dataset for experiments
+- Ran experiments on dataset, results shown below.
+
+| Task ID | Test Accuracy |
+| --- | --- |
+| 1 | 45%|
+| 2 | 32%|
+| 4* | 100%|
+| 9 | 16%|
+| 11 | 32%|
+| 12 | 28%|
+| 13 | 33%|
+| 15* | 100%|
+| 16* | 100%|
+| 17 | 44%|
+| 18* | 29%|
+
+- Note: All training done with learning rate = 0.01, epochs = 10, propagation steps = 5.
+- Note: Tasks with no results require further preprocessing or data generation.
+
+### Next steps
+- Implement RGGC Code for bAbi Tasks
+- Compare results
+
+
 ## 22 Oct 2018
 
 ### Progress
