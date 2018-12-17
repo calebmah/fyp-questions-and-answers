@@ -6,6 +6,6 @@ The goal of this project is to develop and evaluate a convolutional neural netwo
 
 This is a Final Year Project by [Caleb Mah](https://www.linkedin.com/in/caleb-mah/), under supervision by Associate Professor Xavier Bresson.
 
-## Updates
+## Update blog
 
 Updates for this project will be posted on the [project blog](https://calebmah.github.io/fyp-questions-and-answers/).
