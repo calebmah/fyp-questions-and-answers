@@ -11,12 +11,34 @@
 - [ ] Read [A new model for learning in graph domains](https://ieeexplore.ieee.org/document/1555942/)
 
 ### Websites
-- [ ] Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
+- [x] Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
 
 ### Code
 - [ ] Read, and understand [GGNN code](https://github.com/yujiali/ggnn)
-- [x] Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
-- [ ] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+- [x] Fork, Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
+- [x] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+
+## 25 Jan 2019
+
+### Progress
+- [x] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+- [x] Read deeper and understand both papers ([Gated Graph Sequence Neural Networks](https://arxiv.org/pdf/1511.05493.pdf) and [Residual Gated Graph ConvNets](https://arxiv.org/pdf/1711.07553.pdf)) and accompanying code
+- [x] Replicate RGGC experiments
+- [x] Begin integrating RGGC code into PyTorch GGNN Code
+- [x] Read [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](https://smerity.com/articles/2015/keras_qa.html)
+
+### Issues
+- Task 18 is reported to obtain 100% accuracy using GGNN. Replicating the experiment yielded much lower accuracy of 29%. This is because for task 18, a different graph level classification version is used instead of a node selection GGNN. This version is not implemented in the PyTorch implementation.
+- Similarly, task 19 (path evaluation) uses a GGSNN dealing with sequences, which is not implemented in the PyTorch implementation.
+
+### Questions
+- In RGGC code example, why does each convnet cell use two conv operations?
+- Generally more advisable to adapt RGGC structure to GGNN code or adapt GGNN data to RGGC code?
+- Does RGGC code allow for edge labels or edges of different types?
+
+### Next steps
+- Get best performance for GGNN code using grid search (learning rate, training size, hidden state size, training epochs) (maybe)
+- Continue integrating RGGC code into PyTorch GGNN Code
 
 ## 5 Nov 2018
 
