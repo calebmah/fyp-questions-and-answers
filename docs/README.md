@@ -1,5 +1,6 @@
 # Final Year Project Blog
 
+## GitHub
 [Work in progress GitHub link](https://github.com/calebmah/ggnn.pytorch)
 
 ## Todo List
@@ -47,10 +48,43 @@
 
 ### Notes
 
-The RGGC experiments were only conducted for tasks 1, 2, 11, 12, 13, 18 because they are the only available tasks with only one edge type. The image below shows samples from each of these tasks.
+The RGGC experiments were only conducted for tasks 1, 2, 11, 12, 13, 18 because they are the only available tasks with only one edge type. The image below shows samples from each of these tasks. The current implementation is limited in that it can only operate on graphs with a single edge type.
 
-![Sample of tasks with one edge type]({{ site.url }}/images/sample_1edge.png)
+![Sample of tasks with one edge type](http://calebmah.me/fyp-questions-and-answers/images/sample_1edge.png)
 
+Comparing the results, we observe that RGGCs perform generally similar to GGNNs, with only marginal performance improvements in some tasks. This could possibly be attributed to an error in the preprocessing of the dataset. Since positional order in a story for each task is not preserved, there may be data that is incorrect because the data depends upon the sequence in which it was applied. For example in the data below, questions are asked after every 2 facts, but are consolidated at the bottom after preprocessing.
+
+```
+1 1 2
+3 1 4
+5 1 2
+1 1 4
+5 1 6
+5 1 7
+1 1 2
+1 1 8
+1 1 9
+5 1 8
+? 1 1 2
+? 1 5 2
+? 1 5 7
+? 1 3 4
+? 1 3 4
+```
+### Summary of issues for RGGC
+- Batch size limited to 1, have to generate E_start and E_end for batches.
+- Only works when there is 1 edge type. Need to find a way to include multiple edge types.
+- Error in preprocessing data.
+
+### Questions
+- How to best resolve tasks with multiple edge types? Use same adjacency matrix with different numbers or use different adjacency matrices altogether?
+- How to best handle sequence data with RGGCs?
+
+### Next steps
+- Fix minor bug in current implementation that prevents cuda
+- Update implementation to include remaining tasks with more than 1 edge type.
+- Update implementation to handle batch sizes larger than 1.
+- Fix preprocessing code to remove incorrect data. 
 
 ## 25 Jan 2019
 
