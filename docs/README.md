@@ -1,5 +1,7 @@
 # Final Year Project Blog
 
+[Work in progress GitHub link](https://github.com/calebmah/ggnn.pytorch)
+
 ## Todo List
 
 ### Papers
@@ -17,6 +19,38 @@
 - [ ] Read, and understand [GGNN code](https://github.com/yujiali/ggnn)
 - [x] Fork, Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
 - [x] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
+
+## 14 Feb 2019
+
+### Progress
+- [x] Completed and submitted Interim Report
+- [x] Further examining of GGNN and RGGC code.
+- [x] Implemented RGGC for bAbi tasks 1, 2, 11, 12, 13, 18.
+- [x] Ran initial experiments using RGGC, results below.
+
+| Task ID | GGNN | RGGC |
+| --- | --- | --- |
+| 1 | 45%| 47%|
+| 2 | 32%| 43%|
+| 4* | 100%| - |
+| 9 | 16%| - |
+| 11 | 32%| 36%|
+| 12 | 28%| 28%|
+| 13 | 29%| 26%|
+| 15* | 100%| - |
+| 16* | 100%| - |
+| 17 | 9%| - |
+| 18* | 29%| 29%|
+
+- The above experiments with RGGC were done with the same training parameters as the experiments with GGNN. (training data = 50, learning rate = 0.01, epochs = 10, propagation steps = 5)
+- Batch size is the only exception. GGNN were trained with batch size = 10 while RGGC were trained with batch size = 1. This is a limitation of the current implementation of RGGC experiments.
+
+### Notes
+
+The RGGC experiments were only conducted for tasks 1, 2, 11, 12, 13, 18 because they are the only available tasks with only one edge type. The image below shows samples from each of these tasks.
+
+![Sample of tasks with one edge type]({{ site.url }}/images/sample_1edge.png)
+
 
 ## 25 Jan 2019
 
