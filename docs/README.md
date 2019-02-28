@@ -21,6 +21,34 @@
 - [x] Fork, Read, and understand [PyTorch GGNN Code](https://github.com/JamesChuanggg/ggnn.pytorch)
 - [x] Fork, read, and understand [RGGC code](https://github.com/xbresson/spatial_graph_convnets)
 
+## 1 Mar 2019
+
+### Progress
+- [x] Updated model to handle graphs of with multiple edge types by labelling edges (1, 2, 3, etc.)
+- [x] Ran experiments using RGGC on all available tasks again, results below:
+
+| Task ID | GGNN | RGGC |
+| --- | --- | --- |
+| 1 | 45%| 47%|
+| 2 | 32%| 42%|
+| 4* | 100%| 55%|
+| 9 | 16%| 38%|
+| 11 | 32%| 33%|
+| 12 | 28%| 30%|
+| 13 | 29%| 27%|
+| 15* | 100%| 74%|
+| 16* | 100%| 100%|
+| 17 | 9%| 16%|
+| 18* | 29%| 28%|
+
+- The above experiments with RGGC were done with the same training parameters as before. (training data = 50, learning rate = 0.01, epochs = 10, propagation steps = 5, batch size = 1)
+
+### Next steps
+- Optimize code for cuda gpu processing (currently cpu faster than gpu)
+- Perform more in depth experiments with different hyperparameters
+- Update implementation to handle batch sizes larger than 1.
+- Fix preprocessing code to remove incorrect data.
+
 ## 14 Feb 2019
 
 ### Progress
@@ -84,7 +112,7 @@ Comparing the results, we observe that RGGCs perform generally similar to GGNNs,
 - Fix minor bug in current implementation that prevents cuda
 - Update implementation to include remaining tasks with more than 1 edge type.
 - Update implementation to handle batch sizes larger than 1.
-- Fix preprocessing code to remove incorrect data. 
+- Fix preprocessing code to remove incorrect data.
 
 ## 25 Jan 2019
 
